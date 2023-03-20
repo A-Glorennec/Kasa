@@ -1,0 +1,27 @@
+.notFound {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.notFound_txt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.notFound_title {
+  font-size: 200px;
+  color: #ff6060;
+  margin-bottom: 0;
+}
+
+.notFound_description {
+  font-size: 36px;
+  color: #ff6060;
+}
+
+.notFound_return_home {
+  font-size: 18px;
+  color: #ff6060;
+  margin-top: 100px;
+}

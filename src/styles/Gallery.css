@@ -1,0 +1,14 @@
+.home_gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  background-color: #f7f7f7;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
