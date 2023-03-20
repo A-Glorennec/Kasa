@@ -12,7 +12,7 @@ function NotFound() {
           Oups! La page que vous recherchez n'existe pas.
         </p>
 
-        <Link className="notFound_return_home" to="/">
+        <Link className="notFound_return_home" to="/Kasa/">
           Retouner sur la page d'accueil
         </Link>
       </div>

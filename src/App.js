@@ -32,8 +32,3 @@ function App() {
 }
 
 export default App
-
-/*function App() {
-  return <Home />
-}
-export default App*/

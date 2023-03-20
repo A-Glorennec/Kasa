@@ -1,7 +1,8 @@
 import Header from '../components/Header'
-import AboutBanner from '../components/Banner'
+import AboutBanner from '../components/AboutBanner'
 import Collapse from '../components/Collapse'
 import Footer from '../components/Footer'
+import '../styles/About.css'
 
 import image from '../assets/about_cover.png'
 

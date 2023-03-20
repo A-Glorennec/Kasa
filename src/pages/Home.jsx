@@ -8,10 +8,12 @@ const text = 'Chez vous, partout et ailleurs'
 
 function Home() {
   return (
-    <div className="home">
+    <div>
       <Header />
-      <Banner image={image} title={text} />
-      <Gallery />
+      <main className="home">
+        <Banner image={image} title={text} />
+        <Gallery />
+      </main>
       <Footer />
     </div>
   )
