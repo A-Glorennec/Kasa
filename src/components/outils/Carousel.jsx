@@ -3,6 +3,8 @@ import { useState } from 'react'
 import arrowRight from '../../assets/arrow_right.png'
 import arrowLeft from '../../assets/arrow_left.png'
 
+import '../../styles/outils/Carousel.css'
+
 function Carousel({ slides }) {
   const [current, setCurrent] = useState(0)
 
@@ -24,16 +26,16 @@ function Carousel({ slides }) {
       {slides.length > 1 && (
         <>
           <img
-            className="carousel_arrow carousel arrow_right"
-            src={arrowRight}
-            alt="next"
-            onClick={nextSlide}
-          />
-          <img
             className="carousel_arrow carousel_arrow_left"
             src={arrowLeft}
-            alt="previous"
+            alt="next"
             onClick={previousSlide}
+          />
+          <img
+            className="carousel_arrow carousel_arrow_right"
+            src={arrowRight}
+            alt="previous"
+            onClick={nextSlide}
           />
           <p className="carouselCount">
             {current + 1} / {slides.length}
