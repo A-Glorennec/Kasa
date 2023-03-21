@@ -1,0 +1,87 @@
+.housing {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.housing_content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.housing_info {
+  color: #ff6060;
+}
+
+.housing_info button {
+  background-color: #ff6060;
+  border-radius: 10px;
+  line-height: 146.2%;
+  margin-right: 10px;
+  color: white;
+  border: none;
+  box-sizing: border-box;
+  padding: 4px 25px 4px 25px;
+}
+
+.host_picture {
+  border-radius: 50%;
+  margin-bottom: 25px;
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  top: 10px;
+  right: 3px;
+}
+
+.housing_host {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.host_name {
+  position: absolute;
+  left: 30%;
+  top: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff6060;
+  display: flex;
+  flex-direction: column;
+}
+
+.host_stars img {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+
+.housing_collapse {
+  display: flex;
+  gap: 76px;
+  margin-bottom: 20px;
+}
+
+.collapse_item {
+  width: 582px;
+}
+
+.housing_info p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.housing_info h1 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.collapse_item p {
+  margin: 0;
+}
+
+.housing_collapse .collapse_content_hidden {
+  height: 230px;
+}

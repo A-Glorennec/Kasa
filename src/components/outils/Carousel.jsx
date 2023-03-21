@@ -3,7 +3,7 @@ import { useState } from 'react'
 import arrowRight from '../../assets/arrow_right.png'
 import arrowLeft from '../../assets/arrow_left.png'
 
-import '../../styles/outils/Carousel.css'
+import '../../styles/housing/Carousel.css'
 
 function Carousel({ slides }) {
   const [current, setCurrent] = useState(0)

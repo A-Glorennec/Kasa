@@ -3,3 +3,7 @@
   margin-right: 209px;
   margin-bottom: 30px;
 }
+
+.about_main_collapse {
+  height: max-content;
+}

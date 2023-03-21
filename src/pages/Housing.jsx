@@ -11,6 +11,8 @@ import Footer from '../components/Footer'
 import greyStar from '../assets/grey_star.png'
 import redStar from '../assets/red_star.png'
 
+import '../styles/housing/Housing.css'
+
 function Housing() {
   const [slides, setSlides] = useState([])
 
@@ -32,7 +34,7 @@ function Housing() {
       <Header />
       <Carousel slides={slides} />
       <main className="housing">
-        <div className="housing_content">
+        <section className="housing_content">
           <div className="housing_info">
             <h1>{dataCurrentHouse[0].title}</h1>
             <p>{dataCurrentHouse[0].location}</p>
@@ -42,40 +44,44 @@ function Housing() {
               })}
             </div>
           </div>
-          <div className="housing_content_host">
+          <div className="housing_host">
             <div>
-              <div className="housing_content_host_name">
+              <div className="host_name">
                 <span>{name[0]}</span>
                 <span>{name[1]}</span>
               </div>
               <img
+                className="host_picture"
                 src={dataCurrentHouse[0].host.picture}
                 alt="hôte du logement"
               />
             </div>
 
-            <div className="housing_content_host_stars">
-              {[...Array(5)].map((star, index) => {
-                const ratingValue = index + 1
-                return (
-                  <img
-                    key={index}
-                    src={ratingValue <= rating ? redStar : greyStar}
-                    alt="star"
-                  />
-                )
-              })}
+            <div className="host_stars">
+              {(() => {
+                const stars = []
+                for (let i = 1; i <= 5; i++) {
+                  stars.push(
+                    <img
+                      key={i}
+                      src={i <= rating ? redStar : greyStar}
+                      alt="star"
+                    />
+                  )
+                }
+                return stars
+              })()}
             </div>
           </div>
-        </div>
-        <div className="housing_collapse">
-          <div className="housing_collapse_item">
+        </section>
+        <section className="housing_collapse">
+          <div className="collapse_item">
             <Collapse title={'Description'} content={description} />
           </div>
-          <div className="housing_collapse_item">
+          <div className="collapse_item">
             <Collapse title={'Équipements'} content={equipments} />
           </div>
-        </div>
+        </section>
       </main>
       <Footer />
     </>
