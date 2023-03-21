@@ -1,4 +1,4 @@
-import '../styles/Banner.css'
+import '../../styles/Banner.css'
 
 function Banner({ image }) {
   const text = 'Chez vous, partout et ailleurs'

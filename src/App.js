@@ -1,7 +1,7 @@
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import About from './pages/About'
-//import Housing from './pages/Housing'
+import Housing from './pages/Housing'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -9,10 +9,10 @@ const router = createBrowserRouter([
     path: '/kasa/',
     element: <Home />,
   },
-  /*{
-    path: '/houses/:id',
+  {
+    path: '/housing/:id',
     element: <Housing />,
-  },*/
+  },
   {
     path: '/about',
     element: <About />,

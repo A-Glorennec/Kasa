@@ -1,7 +1,7 @@
-import data from '../data/data.json'
-import Card from '../components/Card'
-import '../styles/Gallery.css'
-import '../styles/Card.css'
+import data from '../../data/data.json'
+import Card from './Card'
+import '../../styles/Gallery.css'
+import '../../styles/Card.css'
 
 function Gallery() {
   return (

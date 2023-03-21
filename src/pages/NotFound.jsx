@@ -1,4 +1,4 @@
-import Header from '../components/Header'
+import Header from '../components/header/Header'
 import { Link } from 'react-router-dom'
 import '../styles/NotFound.css'
 
