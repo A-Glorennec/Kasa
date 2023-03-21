@@ -1,4 +1,4 @@
-import '../../styles/Card.css'
+import '../../styles/home/Card.css'
 
 import { Link } from 'react-router-dom'
 

@@ -3,7 +3,7 @@ import Banner from '../../src/components/banners/Banner'
 import Gallery from '../components/home/Gallery'
 import Footer from '../components/Footer'
 import image from '../assets/home_cover.png'
-import '../styles/Home.css'
+import '../styles/home/Home.css'
 const text = 'Chez vous, partout et ailleurs'
 
 function Home() {

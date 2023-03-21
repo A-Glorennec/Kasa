@@ -2,7 +2,7 @@ import Header from '../components/header/Header'
 import AboutBanner from '../../src/components/banners/AboutBanner'
 import Collapse from '../components/outils/Collapse'
 import Footer from '../components/Footer'
-import '../styles/About.css'
+import '../styles/about/About.css'
 
 import image from '../../src/assets/about_cover.png'
 
