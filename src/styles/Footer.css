@@ -17,3 +17,9 @@
   height: 30px;
   width: 90px;
 }
+
+@media only screen and (max-width: 730px) {
+  .footer_copyright {
+    font-size: 12px;
+  }
+}

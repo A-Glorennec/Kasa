@@ -6,17 +6,16 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  padding: 30px;
+  padding: 15px 30px 15px 30px;
   margin-right: min(100px);
   margin-left: min(100px);
   margin-right: max(10%);
   margin-left: max(10%);
-  /*max-width: 1240px;*/
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 730px) {
   .home_gallery {
-    margin: 20px;
+    margin: 0 20px 30px 20px;
     background-color: white;
     padding: 0;
     gap: 0px;

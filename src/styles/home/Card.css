@@ -29,10 +29,11 @@
   padding-left: 15px;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 730px) {
   .card {
     height: 260px;
     width: 100%;
+    margin-top: 20px;
   }
 
   .card img {

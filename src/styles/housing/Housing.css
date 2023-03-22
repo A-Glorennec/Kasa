@@ -14,9 +14,6 @@
   margin-top: 0;
 }
 
-.housing_info div {
-}
-
 .housing_info button {
   background-color: #ff6060;
   border-radius: 10px;
@@ -67,41 +64,6 @@
   padding-top: 24px;
 }
 
-/*
-
-
-.housing_host {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  width: 200px;
-}
-
-.host_name {
-  position: absolute;
-  top: 18px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #ff6060;
-  display: flex;
-  flex-direction: column;
-}
-
-.host_name span {
-  margin-right: 0;
-}
-
-.host_stars img {
-  height: 30px;
-  width: 30px;
-  margin-left: 10px;
-}
-
-.host_stars {
-  height: 30px;
-}
-*/
-
 .housing_collapse {
   display: flex;
   gap: 76px;
@@ -109,7 +71,7 @@
 }
 
 .collapse_item {
-  width: 582px;
+  width: 50%;
 }
 
 .housing_info p {
@@ -129,4 +91,56 @@
 
 .housing_collapse .collapse_content_hidden {
   height: 230px;
+}
+
+@media only screen and (max-width: 730px) {
+  .housing {
+    margin: 20px;
+  }
+
+  .housing_info h1 {
+    font-size: 18px;
+  }
+
+  .housing_content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .housing_host {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .host_stars img {
+    height: 15px;
+    width: 15px;
+  }
+
+  .host_stars {
+    align-self: center;
+  }
+
+  .host_picture {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 0;
+  }
+
+  .host_name {
+    font-size: 12px;
+  }
+
+  .housing_collapse {
+    flex-direction: column;
+  }
+
+  .collapse_item {
+    width: 100%;
+  }
+
+  .housing_collapse .collapse_content_hidden {
+    box-sizing: border-box;
+  }
 }
