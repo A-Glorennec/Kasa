@@ -1,9 +1,11 @@
 .header {
-  margin-left: 100px;
-  margin-top: 40px;
-  margin-right: 100px;
   display: flex;
   justify-content: space-between;
+
+  margin-right: min(100px);
+  margin-left: min(100px);
+  margin-right: max(10%);
+  margin-left: max(10%);
 }
 
 .navbar {
@@ -31,4 +33,29 @@
 .nav_link:hover,
 .nav_list_active .nav_link {
   border-bottom: 1px solid #ff6060;
+}
+
+@media only screen and (max-width: 720px) {
+  .header img {
+    height: 47px;
+    width: 145px;
+  }
+
+  .header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .navbar {
+    font-size: 12px;
+  }
+
+  .nav_list {
+    padding-left: 0;
+  }
+
+  .nav_link {
+    text-transform: uppercase;
+    padding-right: 5px;
+  }
 }

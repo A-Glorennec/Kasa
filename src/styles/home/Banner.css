@@ -2,8 +2,10 @@
   position: relative;
   margin-top: 68px;
   margin-bottom: 50px;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-right: min(100px);
+  margin-left: min(100px);
+  margin-right: max(10%);
+  margin-left: max(10%);
   object-fit: contain;
 }
 
@@ -16,7 +18,7 @@
 .banner_txt {
   position: absolute;
   top: 40%;
-  left: 50%;
+  left: 47%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
@@ -26,4 +28,21 @@
   font-size: 48px;
   font-weight: 500;
   text-align: center;
+}
+
+@media only screen and (max-width: 720px) {
+  .banner_img {
+    height: 150px;
+    width: 100%;
+  }
+
+  .banner {
+    width: 90%;
+    margin: 16px 20px 22px 20px;
+  }
+
+  .banner_txt {
+    font-size: 24px;
+    text-align: left;
+  }
 }

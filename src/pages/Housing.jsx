@@ -45,7 +45,7 @@ function Housing() {
             </div>
           </div>
           <div className="housing_host">
-            <div>
+            <div className="housing_host_name">
               <div className="host_name">
                 <span>{name[0]}</span>
                 <span>{name[1]}</span>
