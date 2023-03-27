@@ -14,11 +14,13 @@ import redStar from '../assets/red_star.png'
 import '../styles/housing/Housing.css'
 
 function Housing() {
+  // Initialisation de slides à un tableau vide, setSlides met à jour la valeur de slides
   const [slides, setSlides] = useState([])
-
+  // Extraction de l'id de l'url
   const houseId = useParams('id').id
+  // On recherche le logement à afficher avec son id
   const dataCurrentHouse = data.filter((data) => data.id === houseId)
-
+  // Met à jour slides lorsque l'id du logement change
   useEffect(() => {
     const dataCurrentHouse = data.filter((data) => data.id === houseId)
     setSlides(dataCurrentHouse[0].pictures)

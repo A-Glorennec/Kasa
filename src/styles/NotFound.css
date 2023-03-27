@@ -18,10 +18,39 @@
 .notFound_description {
   font-size: 36px;
   color: #ff6060;
+  font-weight: 500;
 }
 
 .notFound_return_home {
   font-size: 18px;
   color: #ff6060;
   margin-top: 100px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 730px) {
+  .notFound_title {
+    font-size: 96px;
+    margin-top: 200px;
+  }
+
+  .notFound_description {
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 40px;
+  }
+
+  .notFound_return_home {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 730px) and (max-width: 900px) {
+  .notFound_txt {
+    align-content: center;
+  }
+
+  .notFound_description {
+    margin-left: 100px;
+  }
 }

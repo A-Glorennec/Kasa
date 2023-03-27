@@ -1,6 +1,8 @@
 .housing {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-right: min(100px);
+  margin-left: min(100px);
+  margin-right: max(10%);
+  margin-left: max(10%);
 }
 
 .housing_content {
@@ -134,6 +136,7 @@
 
   .housing_collapse {
     flex-direction: column;
+    gap: 20px;
   }
 
   .collapse_item {
@@ -141,6 +144,26 @@
   }
 
   .housing_collapse .collapse_content_hidden {
-    box-sizing: border-box;
+    box-sizing: content-box;
+    padding-bottom: 50px;
+  }
+
+  .housing_info button {
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (min-width: 730px) and (max-width: 900px) {
+  .housing_collapse {
+    padding-bottom: 20px;
+    gap: 25px;
+  }
+
+  .housing_collapse .collapse_content_hidden {
+    height: 260px;
+  }
+
+  .housing_info button {
+    margin-bottom: 5px;
   }
 }

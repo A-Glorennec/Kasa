@@ -38,7 +38,7 @@
   }
 
   .banner {
-    width: 92%;
+    width: 93%;
     margin: 16px 20px 0px 20px;
     display: flex;
   }
@@ -46,12 +46,13 @@
   .banner_txt {
     font-size: 24px;
     flex-wrap: wrap;
+    margin-right: 60px;
   }
 }
 
-@media only screen and (min-width: 720px) and (max-width: 900px) {
+@media only screen and (min-width: 730px) and (max-width: 900px) {
   .banner {
-    height: 223px;
+    height: 200px;
   }
 
   .banner_txt {

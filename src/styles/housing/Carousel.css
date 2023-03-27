@@ -1,6 +1,8 @@
 .carousel {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-right: min(100px);
+  margin-left: min(100px);
+  margin-right: max(10%);
+  margin-left: max(10%);
   height: 415px;
   border-radius: 25px;
   display: flex;
@@ -9,7 +11,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: background-image 0.5s ease-in-out;
 }
 
 .carousel_arrow {
