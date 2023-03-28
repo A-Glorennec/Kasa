@@ -21,10 +21,12 @@
   border-radius: 10px;
   line-height: 146.2%;
   margin-right: 10px;
+  margin-bottom: 5px;
   color: white;
   border: none;
   box-sizing: border-box;
   padding: 4px 25px 4px 25px;
+  font-size: 14px;
 }
 
 .housing_host_name {
@@ -89,30 +91,39 @@
 
 .collapse_item p {
   margin: 0;
-}
-
-.housing_collapse .collapse_content_hidden {
-  height: 230px;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 730px) {
   .housing {
-    margin: 20px;
+    margin: 0 20px 20px 20px;
+  }
+
+  .housing main {
+    height: 100%;
   }
 
   .housing_info h1 {
     font-size: 18px;
   }
 
+  .collapse_item p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
   .housing_content {
     display: flex;
     flex-direction: column;
+    margin-top: 0;
   }
 
   .housing_host {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   .host_stars img {
@@ -136,7 +147,7 @@
 
   .housing_collapse {
     flex-direction: column;
-    gap: 20px;
+    gap: 0;
   }
 
   .collapse_item {
@@ -145,25 +156,14 @@
 
   .housing_collapse .collapse_content_hidden {
     box-sizing: content-box;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
   }
 
   .housing_info button {
     margin-bottom: 5px;
-  }
-}
-
-@media only screen and (min-width: 730px) and (max-width: 900px) {
-  .housing_collapse {
-    padding-bottom: 20px;
-    gap: 25px;
-  }
-
-  .housing_collapse .collapse_content_hidden {
-    height: 260px;
-  }
-
-  .housing_info button {
-    margin-bottom: 5px;
+    font-size: 10px;
   }
 }

@@ -1,13 +1,11 @@
 .main_about {
-  margin-left: 208px;
-  margin-right: 209px;
-  margin-bottom: 98px;
+  height: 100%;
 }
 
 .about_main_collapse {
   height: max-content;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 220px;
+  margin-right: 220px;
 }
 
 .about_main_collapse .collapse_title {
@@ -48,15 +46,5 @@
   .about_main_collapse .arrow {
     height: 12px;
     width: 15px;
-  }
-}
-
-@media only screen and (min-width: 730px) and (max-width: 1020px) {
-  .main_about {
-    margin: 0 90px 98px 90px;
-  }
-
-  .about_main_collapse {
-    margin: 0px;
   }
 }

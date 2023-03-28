@@ -34,8 +34,8 @@ function Housing() {
   return (
     <>
       <Header />
-      <Carousel slides={slides} />
       <main className="housing">
+        <Carousel slides={slides} />
         <section className="housing_content">
           <div className="housing_info">
             <h1>{dataCurrentHouse[0].title}</h1>

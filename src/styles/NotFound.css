@@ -44,13 +44,3 @@
     font-size: 14px;
   }
 }
-
-@media only screen and (min-width: 730px) and (max-width: 900px) {
-  .notFound_txt {
-    align-content: center;
-  }
-
-  .notFound_description {
-    margin-left: 100px;
-  }
-}

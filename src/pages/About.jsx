@@ -37,8 +37,8 @@ function About() {
   return (
     <div>
       <Header />
-      <AboutBanner image={image} />
       <main className="main_about">
+        <AboutBanner image={image} />
         {aboutDatas.map((data) => {
           return (
             <div key={data.id} className="about_main_collapse">

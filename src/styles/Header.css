@@ -1,7 +1,6 @@
 .header {
   display: flex;
   justify-content: space-between;
-
   margin-right: min(100px);
   margin-left: min(100px);
   margin-right: max(10%);
@@ -59,6 +58,6 @@
   }
 
   .nav_list li {
-    margin-left: 40px;
+    margin-left: 20px;
   }
 }

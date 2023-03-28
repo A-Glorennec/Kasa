@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 function Collapse({ title, content }) {
   // Permet de changer l'état du collapse pour l'ouvrir ou le fermer
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(true)
   return (
     <>
       <div className="collapse">

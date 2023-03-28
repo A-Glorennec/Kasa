@@ -5,6 +5,9 @@
   margin-left: min(100px);
   margin-right: max(10%);
   margin-left: max(10%);
+  background-color: black;
+  border-radius: 25px;
+  height: 223px;
 }
 
 .about_banner_img {
@@ -12,15 +15,18 @@
   width: 100%;
   height: 223px;
   object-fit: cover;
+  opacity: 70%;
 }
 
 @media only screen and (max-width: 730px) {
   .about_banner_img {
-    height: 280px;
+    height: 223px;
     border-radius: 10px;
   }
 
   .about_banner {
-    margin: 20px;
+    width: 100%;
+    margin-left: 0;
+    border-radius: 10px;
   }
 }

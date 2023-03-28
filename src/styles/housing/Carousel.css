@@ -1,8 +1,4 @@
 .carousel {
-  margin-right: min(100px);
-  margin-left: min(100px);
-  margin-right: max(10%);
-  margin-left: max(10%);
   height: 415px;
   border-radius: 25px;
   display: flex;
@@ -43,8 +39,7 @@
 @media only screen and (max-width: 730px) {
   .carousel {
     height: 332px;
-    width: 96%;
-    margin: 0 0px 0 10px;
+    margin: 0;
   }
 
   .carouselCount {
