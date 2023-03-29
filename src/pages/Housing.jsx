@@ -25,7 +25,7 @@ function Housing() {
     const dataCurrentHouse = data.filter((data) => data.id === houseId)
     setSlides(dataCurrentHouse[0].pictures)
   }, [houseId])
-
+  // On extrait les données de l'hôte et du logement  et on les stocke
   const name = dataCurrentHouse[0].host.name.split(' ')
   const rating = dataCurrentHouse[0].rating
   const description = dataCurrentHouse[0].description
