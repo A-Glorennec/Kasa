@@ -1,6 +1,8 @@
+// Permet de créer des liens entre les pages de l'application en utilisant l'url dynamiquement
 import { Link, useLocation } from 'react-router-dom'
 
 function Navbar() {
+  // permet de récupérer l'emplcement actuel de l'utilisateur 
   const location = useLocation()
 
   return (

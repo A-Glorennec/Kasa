@@ -13,5 +13,5 @@ body {
 }
 
 main {
-  min-height: calc(100vw - 120px - 119px);
+  min-height: calc(100vh - 163px - 118px);
 }

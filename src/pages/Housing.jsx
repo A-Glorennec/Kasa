@@ -1,27 +1,28 @@
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-
+// données des logements et des hôtes
 import data from '../data/data.json'
-
+// composants
 import Header from '../components/header/Header'
 import Carousel from '../components/outils/Carousel'
 import Collapse from '../components/outils/Collapse'
 import Footer from '../components/Footer'
-
+// images
 import greyStar from '../assets/grey_star.png'
 import redStar from '../assets/red_star.png'
-
+// styles
 import '../styles/housing/Housing.css'
 
 function Housing() {
-  // Initialisation de slides à un tableau vide, setSlides met à jour la valeur de slides
+  // 	Déclaration d’une variable d’état en lui donnant une valeur initiale, ici un tableau vide
   const [slides, setSlides] = useState([])
   // Extraction de l'id de l'url
   const houseId = useParams('id').id
-  // On recherche le logement à afficher avec son id
+  // On filtre le logement à afficher avec son id
   const dataCurrentHouse = data.filter((data) => data.id === houseId)
-  // Met à jour slides lorsque l'id du logement change
+  // Met à jour slides que lorsque l'id du logement change
   useEffect(() => {
+    // récupération des données du logement acuel par rapport à son id
     const dataCurrentHouse = data.filter((data) => data.id === houseId)
     setSlides(dataCurrentHouse[0].pictures)
   }, [houseId])

@@ -22,7 +22,7 @@
 
 @media only screen and (max-width: 730px) {
   .main_about {
-    margin: 20px 20px 185px 20px;
+    margin: 20px 20px 0px 20px;
   }
 
   .about_main_collapse {
